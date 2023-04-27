@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 #main code for phone_specs
 import mysql.connector
 from prettytable import PrettyTable
@@ -1215,9 +1225,9 @@ class PhoneSpecifications:
         else:
             print("No results found.")
             
-
+#object for class phonespecification made
 phone_specs = PhoneSpecifications()
-display()
+display()#display function called
 while True:
   print("1. COMPARE PHONES")
   print("2. SEARCH PHONE SPECIFICATIONS")
@@ -1227,20 +1237,23 @@ while True:
 
   choice = input("Enter your choice (1-5): ")
   if choice == "1":
-    phone_specs.compare()
+    phone_specs.compare()#compare function called
 
   elif choice == "2":
-    phone_specs.search()
+    phone_specs.search()#search function called
 
   elif choice == "3":
-    phone_specs.review()
+    phone_specs.review()#review function called
 
   elif choice == "4":
-    display_data()
+    display_data()#display_data function called
     
   elif choice == "5":
-      break
+      break#loop exitted
   else:
       print("Invalid choice. Please enter a number between 1 and 3.")
 
+
+
 print("Program terminated. Run again.")
+
